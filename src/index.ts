@@ -42,7 +42,7 @@ class XPostGenerator {
 
     try {
       const response = await this.openai.chat.completions.create({
-        model: 'gpt-4o',
+        model: 'gpt-5',
         max_tokens: 1000,
         temperature: 0.7,
         messages: [
