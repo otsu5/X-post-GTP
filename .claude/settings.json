@@ -1,0 +1,58 @@
+{
+  "projectContext": "X-post-GTP - Grok CLI Context for Autonomous Development",
+  "workingDirectory": "/home/maxko/dev/X-post-GTP/",
+  "preferredStyle": {
+    "language": "TypeScript",
+    "typeMode": "strict",
+    "commitMessage": "conventional",
+    "documentation": "JSDoc",
+    "testing": "Vitest"
+  },
+  "agents": {
+    "coordinator": "agents/coordinator/coordinator-agent.ts",
+    "codegen": "agents/codegen/codegen-agent.ts",
+    "review": "agents/review/review-agent.ts",
+    "issue": "agents/issue/issue-agent.ts",
+    "pr": "agents/pr/pr-agent.ts",
+    "deployment": "agents/deployment/deployment-agent.ts"
+  },
+  "qualityThreshold": {
+    "minScore": 80,
+    "testCoverage": 80,
+    "typeScriptErrors": 0,
+    "eslintErrors": 0
+  },
+  "escalation": {
+    "techLead": "maxko",
+    "po": "maxko",
+    "ciso": "maxko",
+    "cto": "maxko"
+  },
+  "hooks": {
+    "userPromptSubmit": ".claude/hooks/log-commands.sh",
+    "beforeEdit": null,
+    "afterEdit": null
+  },
+  "logging": {
+    "directory": ".ai/logs",
+    "format": "LDD",
+    "level": "info"
+  },
+  "commands": {
+    "/test": ".claude/commands/test.md",
+    "/agent-run": ".claude/commands/agent-run.md",
+    "/verify": ".claude/commands/verify.md",
+    "/deploy": ".claude/commands/deploy.md"
+  },
+  "shikigaku": {
+    "principles": [
+      "Clear Accountability",
+      "Delegation of Authority",
+      "Hierarchical Structure",
+      "Result-Based Evaluation",
+      "Elimination of Ambiguity"
+    ],
+    "labels": 53,
+    "hierarchy": "Coordinator → Specialized Agents"
+  }
+}
