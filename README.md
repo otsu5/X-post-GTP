@@ -24,7 +24,7 @@ AI（Claude Sonnet 4）を使用してX (Twitter) の投稿を自動生成する
 
 ## 🛠️ 技術スタック
 
-- **AI**: GPT-5 (OpenAI API)
+- **AI**: GPT-5 nano (OpenAI API)
 - **言語**: TypeScript (strict mode)
 - **フレームワーク**: Node.js
 - **テスト**: Jest
